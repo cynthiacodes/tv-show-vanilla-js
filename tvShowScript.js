@@ -1,5 +1,5 @@
-import { getElementByIdOrFail } from "./utils";
-import { episodes } from "./episodes";
+import { getElementByIdOrFail } from "./utils.js";
+import { episodes } from "./episodes.js";
 
 const episodesList = getElementByIdOrFail("episodesList");
 
@@ -8,6 +8,13 @@ function makeEpisodesList() {
     const element = document.createElement("li");
     element.innerHTML =
       episode.name + " - S" + episode.season + "E" + episode.number;
+    element.innerHTML += "<br>";
+    const img = document.createElement("img");
+    img.src = episode.image.medium;
+    element.appendChild(img);
+    const summary = document.createElement("p");
+    summary.innerHTML = episode.summary;
+    element.appendChild(summary);
     return element;
   });
 }
