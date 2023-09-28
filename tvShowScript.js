@@ -6,6 +6,7 @@ const episodesList = getElementByIdOrFail("episodesList");
 function makeEpisodesList() {
   return episodes.map((episode) => {
     const element = document.createElement("li");
+    element.classList.add("episode");
     element.innerHTML =
       episode.name + " - S" + episode.season + "E" + episode.number;
     element.innerHTML += "<br>";
