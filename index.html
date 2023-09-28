@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fictional Characters (JS + DOM)</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap"
-            rel="stylesheet"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fictional Characters (JS + DOM)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div>
-            <p class="big">Fictional characters</p>
-            <p id="focusedCharacterPara">
-                Selected character will be displayed here
-            </p>
-            <ul id="charactersUL"></ul>
-            <button id="myButton1">Click me</button>
-        </div>
-        <script type="module" src="myScript.js"></script>
-    </body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <p class="big">Game Of Thrones TV Show App</p>
+      <input type="text" id="myInput" placeholder="Search for episode.." />
+      <p id="filteredEpisode">Selected episode will be displayed here</p>
+      <ul class="episodes" id="episodesList"></ul>
+    </div>
+    <script type="module" src="tvShowScript.js"></script>
+  </body>
 </html>
