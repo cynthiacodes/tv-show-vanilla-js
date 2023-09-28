@@ -29,6 +29,70 @@ li {
 }
 
 /* remove the dot from the list element */
+/* display 3 episodes per row with li tag*/
+
 li {
   list-style: none;
+}
+/*  set width so we can display 3 episodes per row  css grid */
+.episodes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+/* style the image */
+.episode img {
+  width: 100%;
+}
+
+/* style the episode title */
+.episode h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* style the episode description */
+.episode p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* style the episode link */
+.episode a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  background: #333;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+.episode a:hover {
+  background: white;
+  color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .big {
+    font-size: 3rem;
+  }
+  .episode {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .big {
+    font-size: 2rem;
+  }
+  .episode {
+    margin: 1rem 0;
+  }
 }
